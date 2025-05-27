@@ -1,0 +1,26 @@
+dataset: 
+  # Single-slice SDI 
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0005
+    lam_reg: 0.1 # spatial consistency loss balancing parameter
+  MTG:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0001
+    lam_reg: 1.0 # spatial consistency loss balancing parameter
+  Mouse_Embryo:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.001
+    lam_reg: 0.1 # spatial consistency loss balancing parameter
+  NSCLC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0001
+    lam_reg: 0.1 # spatial consistency loss balancing parameter

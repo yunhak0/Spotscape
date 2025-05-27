@@ -1,0 +1,23 @@
+dataset:
+  # Single-slice SDI 
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.005
+  MTG:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0005
+  Mouse_Embryo:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0001
+  NSCLC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.005
+  

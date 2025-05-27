@@ -1,0 +1,8 @@
+dataset: 
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.0001
+    lam_reg: 0.1 # spatial consistency loss balancing parameter

@@ -1,0 +1,30 @@
+dataset: 
+  # Single-slice SDI 
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0001
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+  MTG:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0001
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+  Mouse_Embryo:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.00001
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+  NSCLC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.0005
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss

@@ -1,0 +1,26 @@
+dataset:
+  # Single-slice SDI 
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 250
+    lr: 0.005
+    alpha: 10.0 # Balancing parameter for ZINB loss
+    beta: 1.0 # Balancing parameter for Regularization loss
+  MTG:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 250
+    lr: 0.0005
+    alpha: 10.0 # Balancing parameter for ZINB loss
+    beta: 10.0 # Balancing parameter for Regularization loss
+  # Mouse_Embryo: # OOM
+  #   patient_idx: 0
+  #   slice_idx: 0
+  NSCLC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 5e-05
+    alpha: 0.1 # Balancing parameter for ZINB loss
+    beta: 0.1 # Balancing parameter for Regularization loss

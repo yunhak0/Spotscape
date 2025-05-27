@@ -1,0 +1,17 @@
+dataset:
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.005
+    alpha: 1.0 # balancing parameter for feature reconstruction
+    beta: 1.0 # balancing parameter for self-supervised contrastive loss
+  # Multi-slice Heterogeneous Integration
+  MTG:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.001
+    alpha: 10.0 # balancing parameter for feature reconstruction
+    beta: 10.0 # balancing parameter for self-supervised contrastive loss

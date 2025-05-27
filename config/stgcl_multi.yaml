@@ -1,0 +1,8 @@
+dataset:
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1200
+    lr: 0.005
+    alpha: 0.5 # Balancing parameter for DGI (self-supervised) loss

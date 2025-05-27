@@ -1,0 +1,15 @@
+dataset:
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs_stagate: 1000
+    lr_stagate: 0.005
+    epochs: 1000
+    lr: 0.01
+  MTG:
+    patient_idx: 0
+    slice_idx: -1
+    epochs_stagate: 1000
+    lr_stagate: 0.005
+    epochs: 1000
+    lr: 0.005

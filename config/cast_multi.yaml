@@ -1,0 +1,15 @@
+dataset:
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 400
+    lr: 1e-05
+    lambd: 0.001 # Balancing parameter for CCA-SSG (self-supervised) loss
+  # Multi-slice Heterogeneous Integration
+  MTG:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 400
+    lr: 5e-05
+    lambd: 0.001 # Balancing parameter for CCA-SSG (self-supervised) loss

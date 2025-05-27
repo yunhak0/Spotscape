@@ -1,0 +1,26 @@
+dataset: 
+  # Single-slice SDI 
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.05
+    alpha: 1.0 # spatial expression augmentation parameter
+  MTG:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.05
+    alpha: 0.5 # spatial expression augmentation parameter
+  Mouse_Embryo:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 5e-05
+    alpha: 0.5 # spatial expression augmentation parameter
+  NSCLC:
+    patient_idx: 0
+    slice_idx: 0
+    epochs: 1000
+    lr: 0.001
+    alpha: 1.0 # spatial expression augmentation parameter

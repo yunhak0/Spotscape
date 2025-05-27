@@ -1,0 +1,39 @@
+dataset: 
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.0005
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+    lam_pcl: 0.01 # Balancing parameter for Prototypical Contrastive Loss
+    lam_ss: 1.0 # Balancing parameter for Similarity Scaling (SS) Loss
+  MTG:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.0005
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+    lam_pcl: 0.01 # Balancing parameter for Prototypical Contrastive Loss
+    lam_ss: 1.0 # Balancing parameter for Similarity Scaling (SS) Loss
+  # Alignment
+  Mouse_Embryo:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.001
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+    lam_pcl: 0.01 # Balancing parameter for Prototypical Contrastive Loss
+    lam_ss: 1.0 # Balancing parameter for Similarity Scaling (SS) Loss
+  Breast_Cancer: # Visium-Xenium
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 1000
+    lr: 0.00001
+    lam_re: 0.1 # Balancing parameter for Reconstruction loss
+    lam_sc: 1.0 # Balancing parameter for Similarity Telescope (SC) Loss
+    lam_pcl: 0.01 # Balancing parameter for Prototypical Contrastive Loss
+    lam_ss: 1.0 # Balancing parameter for Similarity Scaling (SS) Loss

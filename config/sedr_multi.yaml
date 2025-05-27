@@ -1,0 +1,10 @@
+dataset:
+  # Multi-slice Homogeneous Integration
+  10X_DLPFC:
+    patient_idx: 0
+    slice_idx: -1
+    epochs: 200
+    lr: 0.0001
+    rec_w: 10.0 # balancing parameter for reconstruction loss
+    gcn_w: 0.1 # balancing parameter for gcn loss
+    self_w: 1.0 # balancing parameter for self loss
