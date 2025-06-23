@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/pypi/l/torch-rechub">
 </p>
 
-The official source code for [Global Context-aware Representation Learning for Spatially Resolved Transcriptomics](https://icml.cc/virtual/2025/poster/44294), accepted at ICML 2025.
+The official source code for [Global Context-aware Representation Learning for Spatially Resolved Transcriptomics](https://openreview.net/forum?id=jeJGH6UDOL), accepted at ICML 2025.
 
 ## Overview
 
@@ -62,6 +62,13 @@ For the detailed descriptions of its arguments, please refer to the ``./utils/ar
   - Yunhak Oh*, Junseok Lee*, Yeongmin Kim, Sangwoo Seo, Namkyeong Lee, and Chanyoung Park. "Global Context-aware Representation Learning for Spatially Resolved Transcriptomics." ICML 2025.
 
 ```bibtex
-TBD
+@inproceedings{
+    oh2025global,
+    title={Global Context-aware Representation Learning for Spatially Resolved Transcriptomics},
+    author={Yunhak Oh and Junseok Lee and Yeongmin Kim and Sangwoo Seo and Namkyeong Lee and Chanyoung Park},
+    booktitle={Forty-second International Conference on Machine Learning},
+    year={2025},
+    url={https://openreview.net/forum?id=jeJGH6UDOL}
+}
 ```
 
