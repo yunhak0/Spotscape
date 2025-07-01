@@ -42,6 +42,20 @@ conda activate spotscape
 sh environment_setup.sh
 ```
 
+## Datasets
+
+Please find the datasets in this [link](https://drive.google.com/drive/folders/18T6pYS4HW08F03xnK_l7gGCRwXtkMGSO?usp=sharing).
+
+| **Dataset** | **Species** | **Tissue**                               | **Technology** | **Resolution** | **Cells/Spots**          | **Genes**                | **\# of Spatial Domains** | **Reference**             |
+|------------------|------------------|-----------------------------------------------|---------------------|---------------------|-------------------------------|-------------------------------|--------------------------------|--------------------------------|
+| 10x_dlpfc            | Human            | Brain (dorsolateral prefrontal cortex; DLPFC) | 10x Visium          | 50 $\mu$m           | 3460 ~ 4789   | 33538                         | 5 ~ 7          | [link](https://www.nature.com/articles/s41593-020-00787-0)                  |
+| mtg              | Human            | Brain (middle temporal gyrus; MTG)            | 10x Visium          | 50 $\mu$m           | 3445 ~ 4832   | 36601                         | 6 ~ 7          | [link](https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-022-01494-6)                 |
+| mouse_embryo     | Mouse            | Whole embryo                                  | Stereo-seq          | 0.2 $\mu$m          | 30756 ~ 55295 | 25485 ~ 27330 | 18 ~ 19        | [link](https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?dgcid=raven_jbs_etoc_email) |
+| nsclc            | Human            | Non-small cell lung cancer (NSCLC)            | NanoString CosMX    | Subcellular         |    11756                        | 960                         | 4                              | [link](https://link.springer.com/article/10.1186/s13059-024-03241-7)                  |
+
+
+
+
 ## How to run the code?
 
 Please find the example shell files as below.
@@ -52,6 +66,9 @@ sh run_single.sh
 
 # multi-slice
 sh run_multi_integration.sh
+
+# large multi-slice (e.g., integration of 10 slices) for reducing the computational complexity
+sh run_multi_integration_large.sh
 ```
 
 For the detailed descriptions of its arguments, please refer to the ``./utils/argument.py`` file.
@@ -71,4 +88,3 @@ For the detailed descriptions of its arguments, please refer to the ``./utils/ar
     url={https://openreview.net/forum?id=jeJGH6UDOL}
 }
 ```
-
