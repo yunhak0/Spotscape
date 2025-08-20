@@ -23,6 +23,12 @@ def construct_sp_graph(slices, adata_concat, gt_colname, data_name):
 
         if data_name.lower() == '10x_dlpfc':
             Cal_Spatial_Net(slices[i], rad_cutoff=150)
+        elif data_name.lower() == 'mtg':
+            Cal_Spatial_Net(slices[i], rad_cutoff=300)
+        elif data_name.lower() == 'mouse_embryo':
+            Cal_Spatial_Net(slices[i], k_cutoff=3, model='KNN')
+        elif data_name.lower() == 'nsclc':
+            Cal_Spatial_Net(slices[i], k_cutoff=5, model='KNN')
         else:
             raise ValueError(f'The dataset {data_name} is not support. Please specify the way of graph construction!')
         
